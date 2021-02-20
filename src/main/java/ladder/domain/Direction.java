@@ -42,7 +42,7 @@ public class Direction {
         if (this.right) {
             return next(FALSE);
         }
-        return next(generatePoint());
+        return next();
     }
 
     public Direction next(boolean nextRight) {
