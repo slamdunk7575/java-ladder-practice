@@ -2,6 +2,7 @@ package ladder.player;
 
 import ladder.util.StringUtil;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
@@ -23,5 +24,11 @@ public class Players {
         return new Players(names);
     }
 
+    public List<Player> getPlayers() {
+        return Collections.unmodifiableList(players);
+    }
 
+    public int getPlayersCount() {
+        return this.players.size();
+    }
 }
