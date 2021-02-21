@@ -1,0 +1,44 @@
+package ladder.game;
+
+import ladder.domain.Ladder;
+import ladder.player.Players;
+import ladder.position.MovedPosition;
+import ladder.position.MovedPositions;
+import ladder.rule.DrawRule;
+import lombok.Builder;
+
+import java.util.stream.Collectors;
+
+public class LadderGame {
+
+    public static final String TARGET_ALL = "all";
+    private final int rows;
+    private final Players players;
+    private Ladder ladder;
+
+    @Builder
+    public LadderGame(int rows, Players players) {
+        this.rows = rows;
+        this.players = players;
+    }
+
+    public Ladder makeLadder(DrawRule drawRule) {
+        this.ladder = Ladder.builder()
+                .rowCount(rows)
+                .columnCount(players.getPlayersCount())
+                .drawRule(drawRule)
+                .build();
+        return ladder;
+    }
+
+    public MovedPositions run(String name) {
+        return players.getPlayers()
+                .stream()
+                .filter(player -> TARGET_ALL.equals(name) || player.matchName(name))
+                .map(player -> MovedPosition.builder()
+                        .name(player.getName())
+                        .finalPosition(ladder.searchFinalPosition(player.getPosition()))
+                        .build())
+                .collect(Collectors.collectingAndThen(Collectors.toList(), MovedPositions::of));
+    }
+}
