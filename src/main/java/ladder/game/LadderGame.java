@@ -1,10 +1,10 @@
 package ladder.game;
 
 import ladder.domain.Ladder;
-import ladder.player.Players;
-import ladder.position.MovedPosition;
-import ladder.position.MovedPositions;
-import ladder.rule.DrawRule;
+import ladder.domain.player.Players;
+import ladder.domain.position.MovedPosition;
+import ladder.domain.position.MovedPositions;
+import ladder.domain.rule.DrawRule;
 import lombok.Builder;
 
 import java.util.stream.Collectors;

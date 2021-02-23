@@ -1,4 +1,4 @@
-package ladder.reward;
+package ladder.domain.reward;
 
 import ladder.util.StringUtil;
 

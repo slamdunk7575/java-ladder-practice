@@ -2,11 +2,11 @@ package ladder.view;
 
 import ladder.domain.Ladder;
 import ladder.domain.LadderLine;
-import ladder.player.Player;
-import ladder.player.Players;
-import ladder.result.GameResults;
-import ladder.reward.Reward;
-import ladder.reward.Rewards;
+import ladder.domain.player.Player;
+import ladder.domain.player.Players;
+import ladder.domain.result.GameResults;
+import ladder.domain.reward.Reward;
+import ladder.domain.reward.Rewards;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

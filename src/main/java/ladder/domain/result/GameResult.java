@@ -1,4 +1,4 @@
-package ladder.result;
+package ladder.domain.result;
 
 import lombok.Builder;
 

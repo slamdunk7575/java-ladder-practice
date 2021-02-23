@@ -1,4 +1,4 @@
-package ladder.position;
+package ladder.domain.position;
 
 import java.util.Collections;
 import java.util.List;

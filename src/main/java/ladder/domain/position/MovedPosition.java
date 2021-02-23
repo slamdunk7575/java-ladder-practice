@@ -1,4 +1,4 @@
-package ladder.position;
+package ladder.domain.position;
 
 import lombok.Builder;
 

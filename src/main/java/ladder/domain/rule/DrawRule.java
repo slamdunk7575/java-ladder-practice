@@ -1,4 +1,4 @@
-package ladder.rule;
+package ladder.domain.rule;
 
 @FunctionalInterface
 public interface DrawRule {

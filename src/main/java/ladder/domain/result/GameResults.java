@@ -1,7 +1,7 @@
-package ladder.result;
+package ladder.domain.result;
 
-import ladder.position.MovedPositions;
-import ladder.reward.Rewards;
+import ladder.domain.position.MovedPositions;
+import ladder.domain.reward.Rewards;
 import lombok.Builder;
 
 import java.util.Collections;

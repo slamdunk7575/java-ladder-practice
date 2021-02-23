@@ -2,8 +2,8 @@ package ladder.game;
 
 import ladder.domain.Ladder;
 import ladder.domain.LadderLine;
-import ladder.player.Players;
-import ladder.rule.DrawRule;
+import ladder.domain.player.Players;
+import ladder.domain.rule.DrawRule;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

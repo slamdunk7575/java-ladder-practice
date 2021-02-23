@@ -1,6 +1,6 @@
 package ladder.domain;
 
-import ladder.rule.RandomDrawRule;
+import ladder.domain.rule.RandomDrawRule;
 
 public class LadderPointGenerator {
     public static boolean generatePoint() {

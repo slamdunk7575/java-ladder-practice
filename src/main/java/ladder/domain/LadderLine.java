@@ -1,6 +1,6 @@
 package ladder.domain;
 
-import ladder.rule.DrawRule;
+import ladder.domain.rule.DrawRule;
 
 import java.util.ArrayList;
 import java.util.List;

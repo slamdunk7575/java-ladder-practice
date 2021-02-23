@@ -1,4 +1,4 @@
-package ladder.reward;
+package ladder.domain.reward;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

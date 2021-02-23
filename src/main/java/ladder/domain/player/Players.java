@@ -1,4 +1,4 @@
-package ladder.player;
+package ladder.domain.player;
 
 import ladder.util.StringUtil;
 

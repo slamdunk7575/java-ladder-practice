@@ -2,10 +2,10 @@ package ladder.controller;
 
 import ladder.domain.Ladder;
 import ladder.game.LadderGame;
-import ladder.player.Players;
-import ladder.result.GameResults;
-import ladder.reward.Rewards;
-import ladder.rule.RandomDrawRule;
+import ladder.domain.player.Players;
+import ladder.domain.result.GameResults;
+import ladder.domain.reward.Rewards;
+import ladder.domain.rule.RandomDrawRule;
 import ladder.view.InputView;
 import ladder.view.ResultView;
 
